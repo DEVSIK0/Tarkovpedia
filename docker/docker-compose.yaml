@@ -17,5 +17,5 @@ services:
     restart: unless-stopped
 
 volumes:
-  tarkovpedia_data:
+  tarkovpedia_database:
     driver: local
