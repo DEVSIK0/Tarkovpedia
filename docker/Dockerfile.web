@@ -16,15 +16,15 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV HOST=0.0.0.0
-# La BD NO va en la imagen. Se usa en un volumen en /app/data
-ENV DATABASE_URL=file:./data/tarkovpedia.db
+# La BD NO va en la imagen. Se usa en un volumen en /app/database
+ENV DATABASE_URL=file:./database/tarkovpedia.db
 
 # Solo copiamos artefactos necesarios
 COPY --from=build /app/.output ./.output
 COPY --from=build /app/public ./public
 
 # Declaramos el punto de datos (volumen externo)
-VOLUME ["/app/data"]
+VOLUME ["/app/database"]
 
 EXPOSE 3000
 CMD ["node", ".output/server/index.mjs"]

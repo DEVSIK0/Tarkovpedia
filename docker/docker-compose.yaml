@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   web:
-    container_name: tarkovpedia_web
+    container_name: Tarkovpedia
     build:
       context: ..
       dockerfile: ./docker/Dockerfile.web
@@ -11,9 +11,9 @@ services:
     environment:
       HOST: "0.0.0.0"
       PORT: "3000"
-      DATABASE_URL: "file:./data/tarkovpedia.db"
+      DATABASE_URL: "file:./database/tarkovpedia.db"
     volumes:
-      - tarkovpedia_data:/app/data
+      - tarkovpedia_data:/app/database
     restart: unless-stopped
 
 volumes:

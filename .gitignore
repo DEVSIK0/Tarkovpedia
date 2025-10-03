@@ -24,9 +24,9 @@ logs
 !.env.example
 
 # Database
-/data/**.db
-/data/**.db-shm
-/data/**.db-wal
+/database/**.db
+/database/**.db-shm
+/database/**.db-wal
 
 # Docker
 docker/docker-compose.override.yaml
