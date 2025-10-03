@@ -13,9 +13,9 @@ services:
       PORT: "3000"
       DATABASE_URL: "file:./database/tarkovpedia.db"
     volumes:
-      - tarkovpedia_database:/app/database
+      - tarkovpedia_db:/app/database
     restart: unless-stopped
 
 volumes:
-  tarkovpedia_database:
+  tarkovpedia_db:
     driver: local
