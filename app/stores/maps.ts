@@ -1,0 +1,75 @@
+import { defineStore } from "pinia";
+
+import type { IMap } from "@/models/IMap";
+
+export const useMaps = defineStore("maps", () => {
+  const maps: IMap[] = [
+    {
+      name: "Customs",
+      shortName: "customs",
+      fileName: "customs.webp",
+      fileThumbnail: "customs_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Factory",
+      shortName: "factory",
+      fileName: "factory.webp",
+      fileThumbnail: "factory_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Ground Zero",
+      shortName: "zero",
+      fileName: "ground_zero.webp",
+      fileThumbnail: "ground_zero_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Interchange",
+      shortName: "interchange",
+      fileName: "interchange.webp",
+      fileThumbnail: "interchange_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Labyrinth",
+      shortName: "labyrinth",
+      fileName: "labyrinth.webp",
+      fileThumbnail: "labyrinth_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Reserve",
+      shortName: "reserve",
+      fileName: "reserve.webp",
+      fileThumbnail: "reserve_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Shoreline",
+      shortName: "shoreline",
+      fileName: "shoreline.webp",
+      fileThumbnail: "shoreline_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Streets of Tarkov",
+      shortName: "streets",
+      fileName: "streets_of_tarkov.webp",
+      fileThumbnail: "streets_of_tarkov_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
+      name: "Woods",
+      shortName: "woods",
+      fileName: "woods.webp",
+      fileThumbnail: "woods_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+  ];
+
+  return {
+    maps,
+  };
+});

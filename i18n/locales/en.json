@@ -1,0 +1,34 @@
+{
+  "navbar.bug": "Report bug",
+  "navbar.access": "Sign in",
+
+  "navbar.bottom.profile": "Profile",
+  "navbar.bottom.dashboard": "Dashboard",
+  "navbar.bottom.maps": "Maps",
+  "navbar.bottom.items": "Items",
+  "navbar.bottom.bug": "Report bug",
+
+  "hero.title": "Tarkovpedia",
+  "hero.subtitle": "Your tactical companion. Real-time prices, interactive maps, and squad coordination—all in one place.",
+  "hero.subtitle.variant": "Create an account to save favorites and personalize your experience",
+  "hero.button.primary": "Enter Tarkovpedia",
+  "hero.button.features": "Explore Tools",
+
+  "feature.card.database.title": "Item database",
+  "feature.card.database.description": "Instant access to thousands of items with live pricing.\nCompare vendors, find the best deals, and save your favorites for quick reference during raids.",
+  "feature.card.map.title": "Interactive maps",
+  "feature.card.map.description": "Draw routes, mark loot spawns, and highlight danger zones.\nEvery map at your fingertips with full annotation tools.",
+  "feature.card.squad.title": "Real-time squad sync",
+  "feature.card.squad.description": "Connect with your squad instantly. Draw strategies together, share intel, and coordinate raids in real-time with live collaboration.",
+  "feature.card.meta.title": "Current meta",
+  "feature.card.meta.description": "Stay ahead with updated tier lists for weapons and armor. Know what works before you load in.",
+  "feature.card.optimize.title": "Lightning fast",
+  "feature.card.optimize.description": "Optimized for speed. No lag while you're in raid.",
+  "feature.card.opensource.title": "Open source",
+  "feature.card.opensource.description": "Community-driven. Contribute on GitHub.",
+
+  "join.title": "YOUR TACTICAL EDGE AWAITS",
+  "join.subtitle": "Access all the intel you need. Make smarter decisions. Survive more raids.",
+  "join.description": "No credit card required. Free to use.",
+  "join.button": "Start using Tarkovpedia"
+}
