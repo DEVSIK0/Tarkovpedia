@@ -1,15 +1,9 @@
 node_modules
-npm-debug.log
-yarn-error.log
 .git
 .vscode
-
-.git
-.gitignore
-
+.nuxt
+.output
+docker
+database
 .env
 
-database/**.db
-database/*.db-*
-
-.DS_Store
