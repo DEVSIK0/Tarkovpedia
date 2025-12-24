@@ -1,0 +1,42 @@
+{
+  "navbar.bottom.profile": "Perfil",
+  "navbar.bottom.dashboard": "Panel",
+  "navbar.bottom.maps": "Mapas",
+  "navbar.bottom.items": "Objetos",
+  "navbar.bottom.bug": "Reportar error",
+
+  "hero.title": "Tarkovpedia",
+  "hero.subtitle": "Tu compañero táctico. Precios en tiempo real, mapas interactivos y coordinación de escuadra — todo en un solo lugar.",
+  "hero.subtitle.variant": "Crea una cuenta para guardar favoritos y personalizar tu experiencia",
+  "hero.button.primary": "Entrar en Tarkovpedia",
+  "hero.button.features": "Explorar herramientas",
+
+  "feature.card.database.title": "Base de datos de objetos",
+  "feature.card.database.description": "Acceso instantáneo a miles de objetos con precios en tiempo real.\nCompara comerciantes, encuentra las mejores ofertas y guarda tus favoritos para consultarlos rápidamente durante las incursiones.",
+  "feature.card.map.title": "Mapas interactivos",
+  "feature.card.map.description": "Dibuja rutas, marca apariciones de botín y resalta zonas peligrosas.\nTodos los mapas al alcance de tu mano con herramientas completas de anotación.",
+  "feature.card.squad.title": "Sincronización de escuadra en tiempo real",
+  "feature.card.squad.description": "Conéctate con tu escuadra al instante. Dibuja estrategias juntos, comparte información y coordina incursiones en tiempo real con colaboración en directo.",
+  "feature.card.meta.title": "Meta actual",
+  "feature.card.meta.description": "Mantente al día con listas de niveles actualizadas para armas y armaduras. Sabe qué funciona antes de entrar en la incursión.",
+  "feature.card.optimize.title": "Ultrarrápido",
+  "feature.card.optimize.description": "Optimizado para la velocidad. Sin retrasos mientras estás en la incursión.",
+  "feature.card.opensource.title": "Código abierto",
+  "feature.card.opensource.description": "Impulsado por la comunidad. Contribuye en GitHub.",
+
+  "join.title": "TU VENTAJA TÁCTICA TE ESPERA",
+  "join.subtitle": "Accede a toda la información que necesitas. Toma mejores decisiones. Sobrevive a más incursiones.",
+  "join.description": "No se requiere tarjeta de crédito. Gratis para usar.",
+  "join.button": "Empezar a usar Tarkovpedia",
+
+  "items.datatable.column.name": "Nombre",
+  "items.datatable.column.shortName": "Nombre corto",
+  "items.datatable.column.weight": "Peso",
+  "items.datatable.column.fleaLevel": "Nivel del mercadillo",
+  "items.datatable.column.trader": "Vender al comerciante",
+
+  "profile.title": "Perfil",
+  "profile.tab.account": "Mi cuenta",
+  "profile.tab.settings": "Ajustes",
+  "profile.tab.settings.language.label": "Seleccionar idioma:"
+}

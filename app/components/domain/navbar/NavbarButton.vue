@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   buttons: {
-    key: string;
+    key: string | null;
     icon: string;
     disabled: boolean;
     onCLick: () => void;
@@ -17,7 +17,7 @@ const props = defineProps<{
     @click="item.onCLick"
   >
     <Icon class="icon" :name="item.icon" />
-    <span>{{ $t(item.key) }}</span>
+    <span v-if="item.key !== null">{{ $t(item.key) }}</span>
   </button>
 </template>
 

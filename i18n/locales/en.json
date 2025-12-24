@@ -1,7 +1,4 @@
 {
-  "navbar.bug": "Report bug",
-  "navbar.access": "Sign in",
-
   "navbar.bottom.profile": "Profile",
   "navbar.bottom.dashboard": "Dashboard",
   "navbar.bottom.maps": "Maps",
@@ -36,5 +33,10 @@
   "items.datatable.column.shortName": "Short name",
   "items.datatable.column.weight": "Weight",
   "items.datatable.column.fleaLevel": "Flea level",
-  "items.datatable.column.trader": "Sell to Trader"
+  "items.datatable.column.trader": "Sell to Trader",
+
+  "profile.title": "Profile",
+  "profile.tab.account": "My Account",
+  "profile.tab.settings": "Settings",
+  "profile.tab.settings.language.label": "Select language:"
 }

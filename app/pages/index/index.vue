@@ -5,13 +5,10 @@ import LandingSectionFooter from "./_sections/LandingSectionFooter.vue";
 
 const router = useRouter();
 
-definePageMeta({
-  // layout: "empty",
-});
-
 const primaryButton = () => {
   router.push("/dashboard");
 };
+
 const secondaryButton = () => {
   document.querySelector("#features")?.scrollIntoView({
     behavior: "smooth",

@@ -49,6 +49,15 @@ const NAVBAR_BUTTONS = [
       window.open("https://github.com/DEVSIK0/Tarkovpedia/issues/new");
     },
   },
+  {
+    key: null,
+    icon: "mdi:github",
+    disabled: false,
+    position: "right",
+    onCLick: () => {
+      window.open("https://github.com/DEVSIK0/Tarkovpedia");
+    },
+  },
 ];
 </script>
 <template>
@@ -64,9 +73,9 @@ const NAVBAR_BUTTONS = [
 
 <style scoped>
 nav {
-  position: fixed;
-  z-index: 999;
-  bottom: 0;
+  /* position: fixed; */
+  /* z-index: 999; */
+  /* bottom: 0; */
   background-color: black;
   width: 100%;
   border-top: 1px solid hsla(0, 100%, 100%, 0.3);

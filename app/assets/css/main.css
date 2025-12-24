@@ -8,6 +8,10 @@
     "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.__DEBUG__ {
+  border: 3px dotted violet;
+}
+
 body {
   background-color: black;
   color: var(--white-3);

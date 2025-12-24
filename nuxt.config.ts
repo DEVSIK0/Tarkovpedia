@@ -10,12 +10,30 @@ export default defineNuxtConfig({
     "/": {
       ssr: true,
     },
+    "/dashboard": {
+      redirect: "/maps",
+    },
   },
   // i18n
   i18n: {
-    defaultLocale: "en",
+    vueI18n: "./i18n.config.ts",
+    defaultLocale: "es",
     strategy: "no_prefix",
-    locales: [{ code: "en", name: "English", shortName: "united-kingdom", file: "en.json" }],
+    locales: [
+      {
+        code: "en",
+        name: "English",
+        shortName: "united-kingdom",
+        language: "en-US",
+      },
+      {
+        code: "es",
+        name: "Español",
+        shortName: "spain",
+        language: "es-ES",
+      },
+    ],
+
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
@@ -40,6 +58,10 @@ export default defineNuxtConfig({
         lang: "en",
       },
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      script: [
+        { src: "https://www.googletagmanager.com/gtag/js?id=G-19QFPPGCW0", async: true },
+        { src: "/js/google_analytics.js" },
+      ],
     },
   },
 });
