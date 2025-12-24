@@ -3,7 +3,7 @@ version: "3.9"
 services:
   tarkovpedia:
     build:
-      context: .
+      context: ..
       dockerfile: dockerfile.web
     container_name: tarkovpedia
     restart: unless-stopped
