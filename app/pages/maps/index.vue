@@ -13,12 +13,14 @@ const goToMap = (map: IMap) => {
 <template>
   <NuxtLayout name="background" backgroundUrl="/images/backgrounds/map.webp">
     <section class="h-full w-full grid place-items-center p-6">
-      <div class="maps-container grid grid-cols-1 md:grid-cols-3 place-items-center content-center gap-6 w-full max-w-325">
+      <div
+        class="maps-container grid grid-cols-1 md:grid-cols-3 place-items-center content-center gap-6 w-full max-w-325"
+      >
         <button
           v-for="map in maps"
           :key="map.name"
           @click="() => goToMap(map)"
-          class="p-8 md:p-20 w-full h-full"
+          class="w-full"
           :style="`background-image: url(/images/maps/${map.fileThumbnail})`"
         >
           <span>{{ map.name }}</span>
@@ -40,6 +42,7 @@ section {
 
     background-size: cover;
     background-position: center center;
+    height: 130px;
 
     &::after {
       content: "";

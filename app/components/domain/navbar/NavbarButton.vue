@@ -26,6 +26,9 @@ button {
   font-size: 1rem;
   background: none;
   border: none;
+  .icon {
+    font-size: 1.6rem;
+  }
 }
 
 button:disabled {

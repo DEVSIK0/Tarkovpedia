@@ -6,11 +6,11 @@ const router = useRouter();
 const NAVBAR_BUTTONS = [
   {
     key: "navbar.bottom.profile",
-    icon: "material-symbols:home",
-    disabled: true,
+    icon: "mdi:account-cog",
+    disabled: false,
     position: "left",
     onCLick: () => {
-      // router.push("/profile");
+      router.push("/profile");
     },
   },
   {
@@ -34,10 +34,10 @@ const NAVBAR_BUTTONS = [
   {
     key: "navbar.bottom.items",
     icon: "material-symbols:shopping-cart",
-    disabled: true,
+    disabled: false,
     position: "left",
     onCLick: () => {
-      // router.push("/items");
+      router.push("/items");
     },
   },
   {

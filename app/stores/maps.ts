@@ -40,6 +40,13 @@ export const useMaps = defineStore("maps", () => {
       aspectRatio: [0, 0],
     },
     {
+      name: "Lighthouse",
+      shortName: "lighthouse",
+      fileName: "lighthouse.webp",
+      fileThumbnail: "lighthouse_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
+    {
       name: "Reserve",
       shortName: "reserve",
       fileName: "reserve.webp",

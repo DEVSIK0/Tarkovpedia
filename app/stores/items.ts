@@ -1,11 +1,9 @@
-import { defineStore } from "pinia";
-
 import { ItemService } from "@/services/tarkov/ItemService";
 import type { IItem } from "@/models/IItem";
 import { ref } from "vue";
 
 export const useItems = defineStore("items", () => {
-  const items = ref<IItem[] | null>(null);
+  const items = ref<IItem[]>([]);
   const isLoading = ref(true);
 
   const fetchItems = () => {

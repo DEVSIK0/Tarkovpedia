@@ -29,4 +29,8 @@ logs
 
 /scripts/**.sh
 
+# Resources and edits
+
+/resources/*/**.psd
+
 

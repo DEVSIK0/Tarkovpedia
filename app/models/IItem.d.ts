@@ -13,6 +13,7 @@ export interface IItem {
   avg24hPrice: null | number;
   link: string;
   wikiLink: string;
+  minLevelForFlea: number,
   sellFor: {
     price: number;
     currency: string;

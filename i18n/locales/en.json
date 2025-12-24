@@ -30,5 +30,11 @@
   "join.title": "YOUR TACTICAL EDGE AWAITS",
   "join.subtitle": "Access all the intel you need. Make smarter decisions. Survive more raids.",
   "join.description": "No credit card required. Free to use.",
-  "join.button": "Start using Tarkovpedia"
+  "join.button": "Start using Tarkovpedia",
+
+  "items.datatable.column.name": "Name",
+  "items.datatable.column.shortName": "Short name",
+  "items.datatable.column.weight": "Weight",
+  "items.datatable.column.fleaLevel": "Flea level",
+  "items.datatable.column.trader": "Sell to Trader"
 }
