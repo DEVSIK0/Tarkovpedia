@@ -43,7 +43,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Tarkovpedia",
-      titleTemplate: "%s - Tarkovpedia",
       htmlAttrs: {
         lang: "en",
       },
