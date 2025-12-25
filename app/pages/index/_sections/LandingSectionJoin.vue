@@ -10,9 +10,9 @@ const emit = defineEmits<{
     <BaseButton
       class="px-44 py-10 text-3xl"
       variant="secondary"
-      @@click="() => emit('@join')"
+      @click="() => emit('@join')"
       :text="$t('join.button')"
-    ></BaseButton>
+    />
     <p>{{ $t("join.description") }}</p>
   </section>
 </template>

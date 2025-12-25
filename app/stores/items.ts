@@ -6,19 +6,15 @@ export const useItems = defineStore("items", () => {
   const items = ref<IItem[]>([]);
   const isLoading = ref(true);
 
-  const fetchItems = () => {
+  const fetchItems = async () => {
     isLoading.value = true;
-    ItemService.getAllItems()
-      .then((response) => {
-        items.value = response.map((item: IItem) => {
-          item.sellFor = item.sellFor.filter((sell) => sell.vendor.normalizedName !== "ref");
-          item.sellFor = item.sellFor.sort((a, b) => b.priceRUB - a.priceRUB);
-          return item;
-        });
-      })
-      .finally(() => {
-        isLoading.value = false;
-      });
+    try {
+      items.value = await ItemService.getAllItems();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      isLoading.value = false;
+    }
   };
 
   return {

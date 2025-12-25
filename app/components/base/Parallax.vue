@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const bgStrength = 28;
-const fgStrength = 56;
+const bgStrength = 16;
+const fgStrength = 26;
 const scale = 1.06;
 const hoverFriction = 0.34;
 const activationMargin = 80;
@@ -139,7 +139,7 @@ onBeforeUnmount(() => {
 
 .content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .layer,

@@ -2,7 +2,9 @@ import type { IItem } from "@/models/IItem";
 import { request, gql } from "graphql-request";
 
 export class ItemService {
-  static QUERY_ALL_ITEMS = gql`
+  private static readonly API_URL = "https://api.tarkov.dev/graphql";
+
+  private static readonly QUERY_ALL_ITEMS = gql`
     query {
       items {
         avg24hPrice
@@ -34,7 +36,21 @@ export class ItemService {
   `;
 
   public static async getAllItems(): Promise<IItem[]> {
-    const response = await request("https://api.tarkov.dev/graphql", this.QUERY_ALL_ITEMS);
-    return response.items;
+    try {
+      const response = await request<{ items: IItem[] }>(this.API_URL, this.QUERY_ALL_ITEMS);
+      return this.processItems(response.items);
+    } catch (error) {
+      console.error("Failed to fetch items:", error);
+      throw error;
+    }
+  }
+
+  private static processItems(items: IItem[]): IItem[] {
+    return items.map((item) => {
+      item.sellFor = item.sellFor
+        .filter((sell) => sell.vendor.normalizedName !== "ref")
+        .sort((a, b) => b.priceRUB - a.priceRUB);
+      return item;
+    });
   }
 }

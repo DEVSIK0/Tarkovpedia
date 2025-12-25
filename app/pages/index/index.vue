@@ -1,51 +1,62 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: false,
+});
+
 import LandingSectionFeatures from "./_sections/LandingSectionFeatures.vue";
 import LandingSectionJoin from "./_sections/LandingSectionJoin.vue";
 import LandingSectionFooter from "./_sections/LandingSectionFooter.vue";
 
-const router = useRouter();
+const { t } = useI18n();
 
-const primaryButton = () => {
-  router.push("/dashboard");
+useSeoMeta({
+  title: () => t("hero.title"),
+  description: () => t("hero.subtitle"),
+  ogTitle: () => t("hero.title"),
+  ogDescription: () => t("hero.subtitle"),
+  ogImage: "/images/parallax_background.webp",
+  twitterCard: "summary_large_image",
+});
+
+const goTo = async () => {
+  await navigateTo("/maps");
 };
 
-const secondaryButton = () => {
-  document.querySelector("#features")?.scrollIntoView({
+const scrollToFeatures = () => {
+  document.getElementById("features")?.scrollIntoView({
     behavior: "smooth",
   });
 };
 </script>
 <template>
   <main class="flex flex-col items-center">
-    <client-only>
-      <BaseParallax
-        background-src="/images/parallax_background.webp"
-        foreground-src="/images/parallax_lightbulb.webp"
-        :gradient="{ color: 'rgba(0, 0, 0, 1)' }"
-      >
-        <div class="content h-full flex flex-col items-center justify-center gap-7">
-          <h1>{{ $t("hero.title") }}</h1>
-          <p class="text-2xl">{{ $t("hero.subtitle") }}</p>
-          <div class="flex gap-6">
-            <BaseButton
-              class="px-6 py-4 text-2xl"
-              variant="primary"
-              @@click="primaryButton"
-              :text="$t('hero.button.primary')"
-            ></BaseButton>
-            <BaseButton
-              class="px-6 py-4 text-2xl"
-              variant="secondary"
-              @@click="secondaryButton"
-              :text="$t('hero.button.features')"
-            ></BaseButton>
-          </div>
-          <small>{{ $t("hero.subtitle.variant") }}</small>
+    <BaseParallax
+      background-src="/images/parallax_background.webp"
+      foreground-src="/images/parallax_lightbulb.webp"
+      :gradient="{ color: 'rgba(0, 0, 0, 1)' }"
+    >
+      <div class="content h-full flex flex-col items-center justify-center gap-7">
+        <h1>{{ $t("hero.title") }}</h1>
+        <p class="text-2xl">{{ $t("hero.subtitle") }}</p>
+        <div class="flex gap-6">
+          <BaseButton
+            class="px-6 py-4 text-2xl"
+            variant="primary"
+            @@click="goTo"
+            :text="$t('hero.button.primary')"
+          ></BaseButton>
+          <BaseButton
+            class="px-6 py-4 text-2xl"
+            variant="secondary"
+            @@click="scrollToFeatures"
+            :text="$t('hero.button.features')"
+          ></BaseButton>
         </div>
-      </BaseParallax>
-    </client-only>
+        <small>{{ $t("hero.subtitle.variant") }}</small>
+      </div>
+    </BaseParallax>
     <LandingSectionFeatures id="features" class="scroll-mt-25" />
-    <LandingSectionJoin @@join="primaryButton" />
+    <LandingSectionJoin @@join="goTo" />
     <LandingSectionFooter />
   </main>
 </template>

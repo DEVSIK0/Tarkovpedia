@@ -1,5 +1,18 @@
 <script setup lang="ts">
-const { locale, locales } = useI18n();
+const { locale, locales, setLocale, loadLocaleMessages } = useI18n();
+
+const saveLocale = async (code: string) => {
+  const newLocale = locales.value.find((l) => l.code === code);
+
+  if (!newLocale) {
+    console.warn(`Locale with code ${code} not found`);
+    return;
+  }
+
+  await loadLocaleMessages(newLocale.code);
+  await setLocale(newLocale.code);
+  localStorage.setItem("lang", code);
+};
 </script>
 
 <template>
@@ -8,15 +21,13 @@ const { locale, locales } = useI18n();
       <label class="flex items-center gap-3">
         <span>{{ $t("profile.tab.settings.language.label") }}</span>
         <Select
-          v-model="locale"
+          :model-value="locale"
           :options="locales"
           option-label="name"
           option-value="code"
-          @change="(item) => (locale = item.value)"
+          @change="(ev) => saveLocale(ev.value)"
         />
       </label>
     </form>
   </section>
 </template>
-
-<style scoped></style>

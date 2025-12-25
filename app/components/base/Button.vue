@@ -12,7 +12,7 @@ const emits = defineEmits<{
 <template>
   <button
     :class="`base-button flex items-center gap-3 ${props.variant}`"
-    @click="() => emits('@click')"
+    @click="emits('@click')"
     :disabled="props.disabled"
   >
     <slot name="left" />
