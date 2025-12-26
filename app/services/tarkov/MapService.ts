@@ -72,6 +72,13 @@ export class MapService {
       fileThumbnail: "woods_thumbnail.webp",
       aspectRatio: [0, 0],
     },
+    {
+      name: "Labs",
+      shortName: "labs",
+      fileName: "labs.webp",
+      fileThumbnail: "labs_thumbnail.webp",
+      aspectRatio: [0, 0],
+    },
   ];
 
   public static async getAllMaps(): Promise<IMap[]> {
