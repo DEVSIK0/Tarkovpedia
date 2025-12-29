@@ -26,6 +26,7 @@ button {
   font-size: 1rem;
   background: none;
   border: none;
+  transition: all .15s ease-in-out;
   .icon {
     font-size: 1.6rem;
   }
