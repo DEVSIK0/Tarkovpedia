@@ -67,7 +67,12 @@ export default defineNuxtConfig({
         { name: "twitter:site", content: "@DEVSIK0" },
         { name: "twitter:creator", content: "@DEVSIK0" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192x192.png" },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+      ],
       script: [
         { src: "https://www.googletagmanager.com/gtag/js?id=G-19QFPPGCW0", async: true },
         { src: "/js/google_analytics.js" },
