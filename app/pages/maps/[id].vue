@@ -17,7 +17,7 @@ onBeforeMount(() => {
       <h1>404 - Not found</h1>
     </section>
     <section v-else>
-      <BaseMap :image-url="`/images/maps/${map.fileName}`" :aspect-ratio="map.aspectRatio" />
+      <BaseMap :image-url="`/images/maps/${map.fileName}`" :aspect-ratio="map.aspectRatio" editable />
     </section>
   </NuxtLayout>
 </template>

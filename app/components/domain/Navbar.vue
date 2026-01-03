@@ -73,9 +73,6 @@ const NAVBAR_BUTTONS = [
 
 <style scoped>
 nav {
-  /* position: fixed; */
-  /* z-index: 999; */
-  /* bottom: 0; */
   background-color: black;
   width: 100%;
   border-top: 1px solid hsla(0, 100%, 100%, 0.3);

@@ -64,14 +64,4 @@ section {
     }
   }
 }
-
-@media screen and (width < 768px) {
-  /* .maps-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  button {
-    padding: 2rem
-  } */
-}
 </style>

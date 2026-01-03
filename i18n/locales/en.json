@@ -38,5 +38,6 @@
   "profile.title": "Profile",
   "profile.tab.account": "My Account",
   "profile.tab.settings": "Settings",
-  "profile.tab.settings.language.label": "Select language:"
+  "profile.tab.settings.language.label": "Select language:",
+  "map.controls.size": "Size"
 }
